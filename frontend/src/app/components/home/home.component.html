@@ -1,0 +1,12 @@
+<section >
+    <main>
+        <section>
+            <app-user-profile (openEditProfileForm)="showForm($event)"></app-user-profile>
+        </section>
+        @if (editForm) {
+            <section>
+                <app-edit-profile-form (closeEditProfileForm)="showForm($event)"></app-edit-profile-form>
+            </section>
+        }
+    </main>
+</section>
